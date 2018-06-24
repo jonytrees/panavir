@@ -1,0 +1,300 @@
+//====================global header
+.layout-header {
+  //@include abs-center;
+  //@include abs-center-fixed;
+  bottom: auto;
+  z-index: 50;
+  padding-top: 9px;
+  padding-bottom: 20px;
+
+  @include mobile{
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  &.active {
+
+  }
+
+  .si-phone {
+    padding-top: 0px;
+  }
+}
+
+.logo {
+  display: block;
+
+
+}
+
+.logo_subtext{
+  color: #818285;
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  display: block;
+}
+
+.si-phone {
+  display: inline-block;
+  margin-top: 16px;
+
+  @include mobile{
+    margin-top: 0;
+  }
+
+  .si-phone-text {
+    margin-bottom: 0px;
+  }
+
+  .phone-link {
+    color: #626365;
+    font-family: "PF Square Sans Pro";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 190px;
+    height: 29px;
+    position: relative;
+
+    @include mobile{
+      display: block;
+    }
+
+    .phone-svg{
+      display: block;
+      position: absolute;
+      top: -7px;
+      left: -45px;
+
+      @include mobile{
+        left: 5px;
+      }
+    }
+  }
+
+  .button-yellow{
+    width: 140px;
+    height: 42px;
+    display: inline-block;
+    box-shadow: 0 2px 0 #ffba00;
+    border-radius: 21px;
+    background-color: #fff200;
+    color: #41331d;
+    font-family: "PF Square Sans Pro";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 12px;
+
+    &:hover{
+      box-shadow: 0 2px 0 #fff200;
+      border-radius: 21px;
+      background-color: #ffba00;
+      text-decoration: none;
+    }
+  }
+}
+
+.global-nav {
+
+  li {
+
+    &:not(:first-child) {
+      margin-left: 0px;
+    }
+  }
+
+  a {
+
+  }
+}
+
+.si-modal{
+  width: 780px;
+  box-shadow: 0 10px 30px #626365;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding-top: 91px;
+  padding-bottom: 96px;
+
+  @include mobile{
+    width: 100%;
+    padding: 91px 20px 96px 20px;
+  }
+
+
+  .modal-form-title{
+    color: #626365;
+    font-family: 'PF Square Sans Cond Pro';
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .modal-time{
+    color: #626365;
+    font-family: 'PF Square Sans Cond Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  form{
+    width: 620px;
+    display: block;
+    margin: 0 auto;
+
+    @include mobile{
+      width: 100%;
+    }
+
+
+    input,
+    textarea{
+      width: 301px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: rgba(98, 99, 101, 0.1);
+      display: inline-block;
+      color: #626365;
+      font-family: "PF Square Sans Pro";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 60px;
+      padding-left: 30px;
+
+      @include mobile{
+        width: 100%;
+      }
+    }
+
+    textarea{
+      width: 620px;
+      height: 200px;
+      padding-top: 24px;
+      line-height: 24px;
+
+      @include mobile{
+        width: 100%;
+      }
+    }
+
+    .btn{
+      width: 320px;
+      height: 60px;
+      box-shadow: 0 2px 0 #ffba00;
+      border-radius: 30px;
+      background-color: #fff200;
+      color: #41331d;
+      font-family: "PF Square Sans Pro";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24.43px;
+
+      &:hover{
+        background-color: #ffba00;
+        box-shadow: 0 2px 0 #fff200;
+        color: #41331d !important;
+      }
+    }
+
+    .form-agree{
+
+      input{
+        font-family: "PF Square Sans Pro";
+        color: #626365;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.si-success-modal{
+
+  .modal_sub_title{
+    color: #626365;
+    font-family: 'PF Square Sans Cond Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .title-2{
+    color: #626365;
+    font-family: "PF Square Sans Pro";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 30px;
+  }
+
+  .sub_title-2{
+    color: #626365;
+    font-family: "PF Square Sans Pro";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .line{
+    width: 462px;
+    height: 3px;
+    background-color: #626365;
+    opacity: 0.2;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .modal_social{
+    width: 230px;
+    display: block;
+    margin: 32px auto 0px;
+
+    .social-title{
+      color: #626365;
+      font-family: "PF Square Sans Pro";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-bottom: 13px;
+    }
+
+    .smm{
+      text-align: center;
+      display: flex;
+      width: 175px;
+      margin: 0 auto;
+      justify-content: space-between;
+      svg{
+        width: 38px;
+        height: 38px;
+      }
+
+      .google{
+        .st0{
+          fill-rule:evenodd;
+          clip-rule:evenodd;
+          fill:#D6492F;
+        }
+      }
+      .insta{
+        .st0{
+          fill:#3B5998;
+        }
+      }
+      .vk{
+        .st0{
+          fill:#4C75A3;
+        }
+      }
+
+    }
+  }
+}
